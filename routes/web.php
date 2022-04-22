@@ -23,4 +23,8 @@ Route::get('/', function () {
 // });
 
 Route::get('/produtos', [ProdutoController::class, 'lista']);
-Route::get('listagem', [ProdutoController::class, 'lista']);
+Route::get('/listagem', [ProdutoController::class, 'lista']);
+
+Route::get('/produtos/mostra', [ProdutoController::class, 'mostra']);       //mostra um único elemento do banco
+
+
